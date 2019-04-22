@@ -1,6 +1,10 @@
 default:
   unit: "null;"
   money: "dep #null; curency; source;"
+replace:
+  address:
+  - from: ";"
+    to: " "
 input:
 - tag: source_info
   regex: "([A-z]+);([A-z]+);([\\d\\.]+);([\\d\\+]+);(.*);(\\d{4,6});?(.*)?"

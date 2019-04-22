@@ -21,12 +21,22 @@ type Config struct {
 		Regex         string   `yaml:"regex"`
 		Map           []string `yaml:"map"`
 	} `yaml:"input"`
+	Replace map[string][]struct {
+		From string `yaml:"from"`
+		To   string `yaml:"to"`
+	} `yaml:"replace"`
 }
 
 var config = Config{}
+
+// Entries readen from the source file
 var input = [][]map[string]string{}
+
+// Entries to be written back to source files
+var outinput = map[string][]string{}
+
+// Entries to be written out to results
 var output = []string{}
-var skippedOutput = []string{}
 
 func main() {
 	log.SetFlags(0)
@@ -99,6 +109,12 @@ func main() {
 					value = defaultValue.(string)
 				}
 			}
+			// Filter values
+			if reps, ok := config.Replace[name]; ok {
+				for _, rep := range reps {
+					value = strings.Replace(value, rep.From, rep.To, -1)
+				}
+			}
 			if skipName {
 				rows = append(rows, value)
 			} else {
@@ -120,19 +136,27 @@ func main() {
 		log.Panic(err)
 	}
 
-	// Output not used strings
-	output = []string{}
+	// Output not used strings map[string][]string{}
 	for _, regs := range input {
 		for _, items := range regs {
-			if source, ok := items["^"]; ok {
-				output = append(output, source)
+			if source, ok := items["^source"]; ok {
+				if path, ok := items["^file"]; ok {
+					outinput[path] = append(outinput[path], source)
+				}
 			}
 		}
 	}
-	if len(output) > 0 {
-		err = ioutil.WriteFile("./Unused_"+fileNameSuffix+".txt", []byte(strings.Join(output, "\n")), 0644)
-		if err != nil {
-			log.Panic(err)
+	for file, data := range outinput {
+		if len(data) > 0 {
+			err = ioutil.WriteFile(file, []byte(strings.Join(data, "\n")), 0644)
+			if err != nil {
+				log.Println(err)
+			}
+		} else {
+			err = ioutil.WriteFile(file, []byte(" "), 0644)
+			if err != nil {
+				log.Println(err)
+			}
 		}
 	}
 }
@@ -176,7 +200,11 @@ func parseIn(path string) {
 				// Add result to corresponding input array
 				item := map[string]string{}
 				item[inputConfig.Tag] = res[0][0]
-				item["^"] = res[0][0]
+				item["^source"] = res[0][0] // Store source string for internal use
+				item["^file"] = path        // Store file path for internal use
+				if _, ok := outinput[path]; !ok {
+					outinput[path] = []string{}
+				}
 				for coord, tag := range inputConfig.Map {
 					item[tag] = res[0][1+coord]
 				}
