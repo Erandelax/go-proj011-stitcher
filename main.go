@@ -20,6 +20,7 @@ type Config struct {
 		Tag           string   `yaml:"tag"`
 		Regex         string   `yaml:"regex"`
 		Map           []string `yaml:"map"`
+		Unique        bool     `yaml:"unique`
 	} `yaml:"input"`
 	Replace map[string][]struct {
 		From string `yaml:"from"`
@@ -28,6 +29,9 @@ type Config struct {
 }
 
 var config = Config{}
+
+// Uniqueness check
+var uniques = map[string]bool{}
 
 // Entries readen from the source file
 var input = [][]map[string]string{}
@@ -195,6 +199,15 @@ func parseIn(path string) {
 			res := inputConfig.compiledRegex.FindAllStringSubmatch(text, -1)
 
 			if len(res) > 0 {
+				// Check for uniqueness
+				if inputConfig.Unique {
+					if _, ok := uniques[res[0][0]+":"+text]; ok {
+						log.Println("WARNING: Row must be unique, but duplicate found", text, path)
+						continue
+					}
+				}
+				uniques[res[0][0]+":"+text] = true
+
 				log.Println("\n- matched", text)
 				log.Println("- to     ", inputConfig.Regex)
 				// Add result to corresponding input array
