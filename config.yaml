@@ -1,0 +1,14 @@
+default:
+  unit: "null;"
+  money: "dep #null; curency; source;"
+input:
+- tag: source_info
+  regex: "([A-z]+);([A-z]+);([\\d\\.]+);([\\d\\+]+);(.*);(\\d{4,6});?(.*)?"
+  map: [name, surname, age, telephone, address, postal, null]
+- tag: source_login
+  regex: "([^@]+@[^:]+):(.*)"
+  map: [email, pw]
+- tag: source_secret
+  regex: "(.*)"
+  map: [word]
+output: [unit, name, surname, age, address, postal, stadt, telephone, word, ^source_info, ^email, pw, nt, id, last ip, money, wh status]

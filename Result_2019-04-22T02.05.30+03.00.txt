@@ -1,0 +1,398 @@
+[ unit = null;
+name = Suzanne
+surname = Muller
+age = 08.10.1978
+address = Rue;Crespin;16
+postal = 1206
+stadt = 
+telephone = 0227895110
+word = b3cb1b7a39bdef263e948a7dbd032419
+Suzanne;Muller;08.10.1978;0227895110;Rue;Crespin;16;1206;Genève
+architectes+schmid@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Arthur
+surname = Huber
+age = 24.07.1987
+address = Grünhaldenstrasse;25
+postal = 8052
+stadt = 
+telephone = 0443030077
+word = 690ce2cd8b14614300c030d12d99a201
+Arthur;Huber;24.07.1987;0443030077;Grünhaldenstrasse;25;8052;Zürich
+marianna+keller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Catherine
+surname = Muller
+age = 14.07.1988
+address = Chemin;des;Pampres;3
+postal = 1213
+stadt = 
+telephone = 0227344667
+word = 67ef87a03f6c5a73dd0dc0fe2ce2ce42
+Catherine;Muller;14.07.1988;0227344667;Chemin;des;Pampres;3;1213;Onex
+suzanne+muller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Edith
+surname = Meier
+age = 18.04.1975
+address = Dornacherstrasse;118
+postal = 4053
+stadt = 
+telephone = 0613611350
+word = 1cb86273096ed207e70b2a8e529d5ea0
+Edith;Meier;18.04.1975;0613611350;Dornacherstrasse;118;4053;Basel
+katja+keller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Antonia
+surname = Muller
+age = 03.04.1982
+address = Route;de;la;Plaine;86
+postal = 1283
+stadt = 
+telephone = 0227542011
+word = 43eef653a98042b8143499bcdaf62e4d
+Antonia;Muller;03.04.1982;0227542011;Route;de;la;Plaine;86;1283;La;Plaine
+urs+keller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Katja
+surname = Keller
+age = 01.06.1982
+address = Zinggstrasse;27
+postal = 3007
+stadt = 
+telephone = 0313827858
+word = 1c294be59623e185417a0423e0df0c41
+Katja;Keller;01.06.1982;0313827858;Zinggstrasse;27;3007;Bern
+arthur+huber@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Urs
+surname = Scherrer
+age = 27.11.1974
+address = Heuelstrasse;34
+postal = 8032
+stadt = 
+telephone = 0442606795
+word = d521bf6efd8449d31d93a1490606cba5
+Urs;Scherrer;27.11.1974;0442606795;Heuelstrasse;34;8032;Zürich
+hans+keller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Marianna
+surname = Keller
+age = 05.02.1997
+address = Reichenbachstrasse;87A
+postal = 3004
+stadt = 
+telephone = 0313059113
+word = 6ba3e6dbb2293f5e3ce0354e7a7cc268
+Marianna;Keller;05.02.1997;0313059113;Reichenbachstrasse;87A;3004;Bern
+lydia+scherrer@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Christiane
+surname = Favre
+age = 14.08.1985
+address = Dangelstrasse;25
+postal = 8038
+stadt = 
+telephone = 0444825432
+word = 9a6e6ceb431100b4cc1c29f2f18e536c
+Christiane;Favre;14.08.1985;0444825432;Dangelstrasse;25;8038;Zürich
+antonia+muller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Xaver
+surname = Meier
+age = 02.01.1992
+address = Achilles;Bischoff-Strasse;9
+postal = 4053
+stadt = 
+telephone = 0613611880
+word = d085fa13db92e424af9364cd7b8715e2
+Xaver;Meier;02.01.1992;0613611880;Achilles;Bischoff-Strasse;9;4053;Basel
+xaver+meier@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Philipp
+surname = Hartmann
+age = 20.08.1999
+address = Appenzellerstrasse;61
+postal = 8049
+stadt = 
+telephone = 0443400093
+word = 494f2c0c636d760a203685bc488e1a01
+Philipp;Hartmann;20.08.1999;0443400093;Appenzellerstrasse;61;8049;Zürich
+monika+meier@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Hans
+surname = Keller
+age = 27.07.1976
+address = Melchenbühlweg;2a
+postal = 3006
+stadt = 
+telephone = 0319314709
+word = 1ecb0790b112de6287cd11adcbfaef28
+Hans;Keller;27.07.1976;0319314709;Melchenbühlweg;2a;3006;Bern
+marguerite+muller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Some
+surname = Random
+age = 03.03.1994
+address = Unusued;Item
+postal = 65000
+stadt = 
+telephone = 241354654654
+word = 61da9d97b4bac47586c55fad69d6dbe5
+Some;Random;03.03.1994;241354654654;Unusued;Item;65000;For;Test
+philipp+hartmann@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = architectes
+surname = schmid
+age = 27.02.1980
+address = Avenue;Alexandre;Vinet;2
+postal = 1815
+stadt = 
+telephone = 0219642611
+word = 5266cf6b9f72d7df2e511948e3b7b9b6
+architectes;schmid;27.02.1980;0219642611;Avenue;Alexandre;Vinet;2;1815;Clarens
+edith+meier@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Roger
+surname = Hartmann
+age = 22.04.1973
+address = Imbisbühlstrasse;67
+postal = 8049
+stadt = 
+telephone = 0443637223
+word = 886dd6090fc5bff2c7fc13da4525758d
+Roger;Hartmann;22.04.1973;0443637223;Imbisbühlstrasse;67;8049;Zürich
+martin+meier@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Monika
+surname = Meier
+age = 17.02.1976
+address = Herrengrabenweg;41
+postal = 4054
+stadt = 
+telephone = 0613011083
+word = 459676c6d75f28a2caf2a9641e3ce2d0
+Monika;Meier;17.02.1976;0613011083;Herrengrabenweg;41;4054;Basel
+christiane+favre@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Martin
+surname = Meier
+age = 22.07.1987
+address = Septerstrasse;16
+postal = 4056
+stadt = 
+telephone = 0613115474
+word = 2fcc56239e7510777144aabc7a6f069e
+Martin;Meier;22.07.1987;0613115474;Septerstrasse;16;4056;Basel
+therese+favre@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Therese
+surname = Favre
+age = 27.12.1995
+address = Splügenstrasse;12
+postal = 8002
+stadt = 
+telephone = 0442016838
+word = 11f8f88fecf13f7620b43ce697a044aa
+Therese;Favre;27.12.1995;0442016838;Splügenstrasse;12;8002;Zürich
+roger+hartmann@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Urs
+surname = Keller
+age = 25.02.1996
+address = Burgfeldweg;18
+postal = 3006
+stadt = 
+telephone = 0319340032
+word = 81438cb4f1553e2753995b85489a7570
+Urs;Keller;25.02.1996;0319340032;Burgfeldweg;18;3006;Bern
+esther+meier@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Lydia
+surname = Scherrer
+age = 01.08.1983
+address = Wildbachstrasse;74
+postal = 8008
+stadt = 
+telephone = 0443892140
+word = 8149de97aec71ea8d49c5ab616e27fc9
+Lydia;Scherrer;01.08.1983;0443892140;Wildbachstrasse;74;8008;Zürich
+catherine+muller@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
+
+[ unit = null;
+name = Esther
+surname = Meier
+age = 19.08.1990
+address = Bachlettenstrasse;27
+postal = 4054
+stadt = 
+telephone = 0613017512
+word = 8a97a6f971a1c799798d6eab24ee1d5f
+Esther;Meier;19.08.1990;0613017512;Bachlettenstrasse;27;4054;Basel
+urs+scherrer@email.com
+pw = password
+nt = 
+id = 
+last ip = 
+money = dep #null; curency; source;
+wh status = 
+]
